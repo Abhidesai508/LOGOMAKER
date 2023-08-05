@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const creationlogo = require('./lib/creation');
 const { Circle, Square, Triangle } = require('./lib/shape.js');
 
 const questions = [
@@ -41,6 +42,17 @@ function init() {
           shape = new Triangle();
 
       shape.setColor(logoColor);
+
+      const svg = new creationlogo();
+      svg.setTextElement(logoLetters, textColor);
+      svg.setShapeElement(shape);
+
+      const svgString = svg.render();
+      fs.writeFile('logo.svg', svgString, (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      }
+    );
   }
 )}
 
