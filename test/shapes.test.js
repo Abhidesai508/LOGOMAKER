@@ -4,7 +4,7 @@ describe('Circle', () => {
     it('Renders a Circle', () => {
         const shape = new Circle();
         shape.setColor("yellow");
-        expect(shape.render()).toEqual('<circle r="65" fill= "yellow" />');
+        expect(shape.render()).toEqual('<circle cx="150" cy="100" r="65" fill= "yellow" />');
 
     });
   });
