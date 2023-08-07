@@ -5,8 +5,14 @@ I have made LOGOMAKER which helps user creates Logo with the help of Node.js. Th
 
 # LINKS:
 
-GITHUB:
+GITHUB: https://github.com/Abhidesai508/LOGOMAKER
+
+# CONTRIBUTORS:
+
+Abhishek Desai
 
 # Recording:
+
+YOUTUBE: https://youtu.be/5p4bYIIseiU
 
 
